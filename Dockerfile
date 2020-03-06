@@ -1,5 +1,5 @@
-FROM python:3.6-alpine
-RUN apk add --update make
+FROM cloudacademydevops/ide:python37
+USER root
 WORKDIR /root/lab/
 COPY src ./src
 COPY test ./test
